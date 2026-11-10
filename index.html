@@ -1,0 +1,223 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>07EVEN Black Friday</title>
+<meta name="description" content="07EVEN Black Friday 2026: 30 sets, three prices, five texts.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0a0a0a;--ink:#fff;--mute:#8d8a85;--line:#222;--red:#ff2e2e;--card:#141414}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--ink);font:400 16px/1.55 Inter,Arial,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+.A{font-family:Anton,Impact,sans-serif;text-transform:uppercase;font-weight:400;letter-spacing:.01em}
+.wrap{max-width:1040px;margin:0 auto;padding:0 16px}
+.eb{font:800 11px/1 Inter;letter-spacing:.24em;text-transform:uppercase;color:var(--mute)}
+section{padding:72px 0}
+
+/* hero */
+.hero{min-height:100svh;display:flex;align-items:center;position:relative;overflow:hidden;padding:56px 0}
+.hero:before{content:"";position:absolute;inset:-40%;background:radial-gradient(circle at 30% 40%,rgba(255,46,46,.28),transparent 45%),radial-gradient(circle at 75% 70%,rgba(255,46,46,.14),transparent 40%);animation:drift 14s ease-in-out infinite alternate}
+@keyframes drift{to{transform:translate(6%,-4%) rotate(8deg)}}
+.hero .wrap{position:relative;width:100%}
+h1{font-size:clamp(64px,17vw,176px);line-height:.84;margin-top:14px}
+h1 span{display:block;opacity:0;transform:translateY(40px);animation:up .9s cubic-bezier(.2,.8,.2,1) forwards}
+h1 span:nth-child(2){animation-delay:.12s;color:var(--red)}h1 span:nth-child(3){animation-delay:.24s}
+@keyframes up{to{opacity:1;transform:none}}
+.hero p{color:#c9c6c0;max-width:480px;margin-top:20px;opacity:0;animation:up .9s .45s forwards}
+.cd{display:flex;gap:10px;margin-top:32px;opacity:0;animation:up .9s .6s forwards}
+.cd div{background:var(--card);border:1px solid var(--line);padding:12px 0;width:76px;text-align:center}
+.cd b{display:block;font:400 34px/1 Anton;font-variant-numeric:tabular-nums}
+.cd span{font:800 9px Inter;letter-spacing:.2em;color:var(--mute)}
+.cdl{margin-top:10px;font:600 12px Inter;color:var(--mute);opacity:0;animation:up .9s .7s forwards}
+.scroll{position:absolute;left:50%;bottom:22px;width:22px;height:36px;border:2px solid #444;border-radius:12px;transform:translateX(-50%)}
+.scroll:after{content:"";position:absolute;left:50%;top:7px;width:4px;height:8px;margin-left:-2px;background:var(--red);border-radius:2px;animation:sc 1.6s infinite}
+@keyframes sc{to{transform:translateY(12px);opacity:0}}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(36px);transition:opacity .8s cubic-bezier(.2,.8,.2,1),transform .8s cubic-bezier(.2,.8,.2,1)}
+.rv.in{opacity:1;transform:none}
+
+/* big brands */
+h2{font-size:clamp(40px,10vw,84px);line-height:.9;margin-top:12px}
+.brands{display:grid;gap:12px;margin-top:28px}
+@media(min-width:760px){.brands{grid-template-columns:repeat(2,1fr)}}
+.brand{background:var(--card);border:1px solid var(--line);padding:20px;display:grid;gap:4px}
+.brand b{font:400 26px/1 Anton;text-transform:uppercase}
+.brand span{color:#bdbab4}
+
+/* steps */
+.steps{margin-top:32px;display:grid;gap:0;position:relative}
+.step{display:grid;grid-template-columns:64px 1fr;gap:4px 16px;padding:26px 0;border-top:1px solid var(--line)}
+.step i{font:400 52px/1 Anton;font-style:normal;color:var(--red);grid-row:span 2}
+.step b{font:400 clamp(26px,6vw,36px)/1.05 Anton;text-transform:uppercase}
+.step p{color:#bdbab4;max-width:620px}
+.ladder{grid-column:2;display:flex;gap:8px;margin-top:14px;align-items:flex-end}
+.ladder div{background:#fff;color:#000;padding:10px 14px;font:400 20px/1 Anton;text-transform:uppercase;transform:scaleY(0);transform-origin:bottom;transition:transform .6s cubic-bezier(.2,.8,.2,1)}
+.ladder div:nth-child(2){padding-top:22px;transition-delay:.12s}.ladder div:nth-child(3){padding-top:34px;background:var(--red);color:#fff;transition-delay:.24s}
+.in .ladder div{transform:none}
+
+/* timeline */
+.tl{margin-top:34px;position:relative;padding-left:28px}
+.tl:before{content:"";position:absolute;left:7px;top:6px;bottom:6px;width:2px;background:var(--line)}
+.tl .bar{position:absolute;left:7px;top:6px;width:2px;height:0;background:var(--red);transition:height 1.8s cubic-bezier(.2,.8,.2,1)}
+.tl.in .bar{height:calc(100% - 12px)}
+.ev{position:relative;padding:0 0 26px}
+.ev:before{content:"";position:absolute;left:-27px;top:5px;width:14px;height:14px;border-radius:50%;background:var(--bg);border:2px solid var(--red)}
+.ev.hot:before{background:var(--red);box-shadow:0 0 0 0 rgba(255,46,46,.6);animation:pulse 1.8s infinite}
+@keyframes pulse{to{box-shadow:0 0 0 14px rgba(255,46,46,0)}}
+.ev small{font:800 11px Inter;letter-spacing:.18em;text-transform:uppercase;color:var(--red)}
+.ev b{display:block;font:400 24px/1.1 Anton;text-transform:uppercase;margin-top:4px}
+.ev span{color:#bdbab4}
+
+/* ads + texts */
+.two{display:grid;gap:14px;margin-top:28px}
+@media(min-width:760px){.two{grid-template-columns:repeat(3,1fr)}.ad{aspect-ratio:4/5}}
+.ad{background:var(--card);border:1px solid var(--line);min-height:240px;padding:20px;display:flex;flex-direction:column;justify-content:flex-end;position:relative;overflow:hidden}
+.ad:before{content:attr(data-n);position:absolute;top:10px;left:16px;font:400 64px/1 Anton;color:#2a2a2a}
+.ad b{font:400 30px/1 Anton;text-transform:uppercase}
+.ad span{color:#bdbab4;margin-top:8px}
+.ad.r{background:var(--red);border-color:var(--red)}.ad.r:before{color:rgba(0,0,0,.18)}.ad.r span{color:#fff}
+.tx{margin-top:28px;display:grid;gap:10px;max-width:520px}
+.bub{background:#1f1f1f;border-radius:20px 20px 20px 6px;padding:12px 16px;justify-self:start;max-width:92%;opacity:0;transform:translateY(14px) scale(.96);transition:all .5s}
+.in .bub{opacity:1;transform:none}
+.bub:nth-child(2){transition-delay:.25s}.bub:nth-child(3){transition-delay:.5s}.bub:nth-child(4){transition-delay:.75s}.bub:nth-child(5){transition-delay:1s}
+.bub small{display:block;font:800 9px Inter;letter-spacing:.18em;text-transform:uppercase;color:var(--mute);margin-bottom:2px}
+
+/* rules */
+.rules{margin-top:28px;display:grid;gap:10px}
+.rules div{border-left:3px solid var(--red);padding:6px 0 6px 14px;font-weight:600}
+.rules div em{font-style:normal;color:var(--mute);font-weight:400}
+footer{padding:40px 0 48px;color:var(--mute);font-size:12px;border-top:1px solid var(--line)}
+footer a{color:#bdbab4}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}h1 span,.hero p,.cd,.cdl,.rv,.bub{opacity:1;transform:none}.ladder div{transform:none}.tl .bar{height:calc(100% - 12px)}}
+</style><style>
+.big{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:28px}
+@media(min-width:760px){.big{grid-template-columns:repeat(4,1fr)}}
+.big div{background:var(--card);border:1px solid var(--line);padding:18px}
+.big b{display:block;font:400 clamp(34px,9vw,48px)/1 Anton}
+.big span{font:800 10px/1.3 Inter;letter-spacing:.16em;text-transform:uppercase;color:var(--mute)}
+.big .r{background:var(--red);border-color:var(--red)}.big .r span{color:#fff}
+.price{margin-top:28px;display:grid;gap:10px}
+.pr{display:grid;grid-template-columns:1fr auto;align-items:center;gap:12px;background:var(--card);border:1px solid var(--line);padding:16px 18px}
+.pr b{font:400 22px/1.1 Anton;text-transform:uppercase}.pr span{display:block;color:#bdbab4;font-size:14px;margin-top:2px}
+.pr em{font:400 34px/1 Anton;font-style:normal}.pr.hot{border:2px solid var(--red)}.pr.hot em{color:var(--red)}
+.cmp{margin-top:24px;display:grid;gap:10px}
+@media(min-width:760px){.cmp{grid-template-columns:1fr 1fr}}
+.cmp div{background:var(--card);border:1px solid var(--line);padding:18px}
+.cmp small{font:800 10px Inter;letter-spacing:.18em;text-transform:uppercase;color:var(--mute)}
+.cmp b{display:block;font:400 30px/1.1 Anton;margin:6px 0}
+.cmp p{color:#bdbab4;font-size:15px}
+.learn{margin-top:26px;display:grid;gap:10px}
+.lr{display:grid;grid-template-columns:96px 1fr;gap:14px;align-items:center;border-top:1px solid var(--line);padding:14px 0}
+.lr b{font:400 34px/1 Anton}.lr.g b{color:#3ddc84}.lr.x b{color:var(--red)}
+.lr span{color:#d9d6d0}.lr span em{display:block;font-style:normal;color:var(--mute);font-size:14px}
+</style></head><body>
+<section class="hero"><div class="wrap">
+<div class="eb">07EVEN · Black Friday 2026</div>
+<h1 class="A"><span>30 Sets.</span><span>That's</span><span>It.</span></h1>
+<p>The restock lands in a week: 30 sets, 60 pieces. This is how we price them, sell them out, and use the text list to do it.</p>
+<div class="cd"><div><b id="d">--</b><span>DAYS</span></div><div><b id="h">--</b><span>HRS</span></div><div><b id="m">--</b><span>MIN</span></div><div><b id="s">--</b><span>SEC</span></div></div>
+<div class="cdl">Until early access · Wed Nov 26, 12am ET</div>
+</div><div class="scroll"></div></section>
+
+<section><div class="wrap">
+<div class="eb rv">The big call</div>
+<h2 class="A rv">Scarcity,<br>not a fire sale</h2>
+<p class="lede rv" style="color:#c9c6c0;max-width:560px;margin-top:14px">With only 30 sets, there's no reason to slash the price. The top streetwear stores hold full price and sell the limit instead. 30 sets at $100 is $3,000. At $80 it's $2,400 for the same work.</p>
+<div class="big">
+<div class="rv"><b>30</b><span>Sets arriving</span></div>
+<div class="rv"><b>169</b><span>People on the text list</span></div>
+<div class="rv r"><b>$100</b><span>Holds as the price</span></div>
+<div class="rv"><b>Next day</b><span>Ships once they land</span></div>
+</div></div></section>
+
+<section><div class="wrap">
+<div class="eb rv">How the top stores price</div>
+<h2 class="A rv">Full price wins</h2>
+<div class="cmp">
+<div class="rv"><small>Two top streetwear stores, public prices today</small><b>$150 hoodie · $120–150 pants</b><p>That's $270–300 for a top and bottom. Only 1–2 items on sale out of 30–60. They don't discount all year, so a drop feels like an event.</p></div>
+<div class="rv"><small>07EVEN today</small><b>$100 set · "was $140"</b><p>Already below them, with 7 items permanently marked down. That leaves no room for a deep Black Friday cut. So the deal is getting one before they're gone, not a lower price.</p></div>
+</div></div></section>
+
+<section><div class="wrap">
+<div class="eb rv">The prices</div>
+<h2 class="A rv">Three prices</h2>
+<div class="price">
+<div class="pr hot rv"><div><b>Early access · text list only</b><span>Wed Nov 26, 12am → midnight. Its own code, one per person.</span></div><em>$90</em></div>
+<div class="pr rv"><div><b>Black Friday · everyone</b><span>Thu Nov 27 → Tue Dec 1. Free US shipping, ships next day.</span></div><em>$100</em></div>
+<div class="pr rv"><div><b>Two sets</b><span>Stays as is, taken off in the bag. No other codes stack.</span></div><em>$175</em></div>
+</div>
+<p class="rv" style="color:#8d8a85;font-size:14px;margin-top:14px">The 15% popup code goes off from Nov 26 to Dec 1 so nothing stacks under the list price. Show the real count of sets left on the page as they sell.</p>
+</div></section>
+
+<section><div class="wrap">
+<div class="eb rv">What her texts showed</div>
+<h2 class="A rv">The list's data</h2>
+<div class="learn">
+<div class="lr g rv"><b>22%</b><span>clicked the "$45 sale is live, early access, ships same day" text<em>A deadline, in-hand stock, fast shipping and a link. 3 orders.</em></span></div>
+<div class="lr x rv"><b>0%</b><span>clicked the reminder with no link<em>No link, no clicks. Every text carries one.</em></span></div>
+<div class="lr x rv"><b>0%</b><span>clicked "28% off + extra 10% with a code"<em>Discount-code texts got ignored, and 2 people unsubscribed.</em></span></div>
+</div>
+<p class="rv" style="color:#c9c6c0;margin-top:16px">So the early-access texts sell access and speed, not a percentage: "you're in first, 30 sets, ships next day, here's the link."</p>
+</div></section>
+
+<section><div class="wrap">
+<div class="eb rv">The calendar</div>
+<h2 class="A rv">Now → Dec 1</h2>
+<div class="tl rv"><span class="bar"></span>
+<div class="ev"><small>This week</small><b>Popup becomes "early access"</b><span>Swap the 15% popup to "Get Black Friday early access by text". Ads to warm audiences say the same.</span></div>
+<div class="ev"><small>~Nov 17</small><b>Sets land</b><span>Count them in Shopify, then switch on "ships next day" for real</span></div>
+<div class="ev"><small>Thu Nov 20 · text 1</small><b>The tease</b><span>30 sets, early access at midnight Nov 26</span></div>
+<div class="ev hot"><small>Wed Nov 26 · 12am ET · text 2</small><b>Early access opens</b><span>$90 for the list, 24 hours</span></div>
+<div class="ev"><small>Thu Nov 27 · 9am ET · text 3</small><b>Open to everyone</b><span>$100, the real count of sets left on the page</span></div>
+<div class="ev hot"><small>Fri Nov 28 · text 4</small><b>Sizes going</b><span>Ad budgets up while the sets last</span></div>
+<div class="ev"><small>Mon Nov 30 · text 5</small><b>Last sets</b><span>Only if any are left. A hard end Dec 1.</span></div>
+</div></div></section>
+
+<section><div class="wrap">
+<div class="eb rv">The texts</div>
+<h2 class="A rv">Ready to send</h2>
+<div class="tx rv">
+<div class="bub"><small>Thu Nov 20</small>07EVEN: 30 sets are landing for Black Friday. That's all of them. You get in first at midnight Nov 26. [link]</div>
+<div class="bub"><small>Wed Nov 26 · 12am</small>07EVEN: You're in early. 30 sets, $90 for the list until midnight. Ships next day. [link]</div>
+<div class="bub"><small>Thu Nov 27 · 9am</small>07EVEN: Black Friday is open to everyone now. [X] sets left. Ships next day. [link]</div>
+<div class="bub"><small>Fri Nov 28</small>07EVEN: Sizes are going fast. Free shipping, ships next day. [link]</div>
+<div class="bub"><small>Mon Nov 30</small>07EVEN: Last sets. When they're gone, they're gone. [link]</div>
+</div>
+<p class="rv" style="color:#8d8a85;font-size:14px;margin-top:14px">One segment each, plain text, US/Canada list, Reply STOP added by Postscript. [X] gets the real count on the day.</p>
+</div></section>
+
+<section><div class="wrap">
+<div class="eb rv">Ads</div>
+<h2 class="A rv">Three creatives</h2>
+<div class="two">
+<div class="ad rv" data-n="1"><b>Her best fit-check video</b><span>With "30 sets · Black Friday" on screen.</span></div>
+<div class="ad rv" data-n="2"><b>Early access</b><span>"Text for early access" until Nov 26. It grows the list.</span></div>
+<div class="ad r rv" data-n="3"><b>[X] sets left</b><span>Nov 28–Dec 1, warm audiences only.</span></div>
+</div></div></section>
+
+<section><div class="wrap">
+<div class="eb rv">Don't</div>
+<h2 class="A rv">Rules</h2>
+<div class="rules">
+<div class="rv">Drop the price below $90 <em>· 30 sets sell out without it</em></div>
+<div class="rv">Send a text without a link <em>· that one got 0 clicks</em></div>
+<div class="rv">Lead a text with a % code <em>· that one got 0 clicks and unsubscribes</em></div>
+<div class="rv">Promise next day before the sets are counted in <em>· late orders become chargebacks</em></div>
+</div></div></section>
+
+<footer><div class="wrap">Text results from 07EVEN's own Postscript account (Nov 5–6, 2026). Top-store prices read from their public storefronts on Nov 9, 2026.</div></footer>
+<script>
+(function(){
+  var t=Date.parse('2026-11-26T05:00:00Z');
+  function p(n){return String(n).padStart(2,'0')}
+  function tick(){var r=Math.max(0,t-Date.now())/1000;
+    document.getElementById('d').textContent=p(Math.floor(r/86400));
+    document.getElementById('h').textContent=p(Math.floor(r%86400/3600));
+    document.getElementById('m').textContent=p(Math.floor(r%3600/60));
+    document.getElementById('s').textContent=p(Math.floor(r%60));}
+  tick();setInterval(tick,1000);
+  var els=document.querySelectorAll('.rv');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return}
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.15,rootMargin:'0px 0px -8% 0px'});
+  els.forEach(function(e){io.observe(e)});
+})();
+</script>
+</body></html>
